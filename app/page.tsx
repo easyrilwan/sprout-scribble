@@ -9,7 +9,7 @@ export default function Home() {
       <Button
         variant={"link"}
         className="cursor-pointer"
-        onClick={() => console.log("Button Clicked")}
+        onClick={() => console.log("Button Clicked again")}
       >
         Click me
       </Button>
