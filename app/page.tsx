@@ -7,7 +7,6 @@ export default function Home() {
     <main className="p-2 text-4xl">
       <h1>Hello there</h1>
       <Button
-        variant={"link"}
         className="cursor-pointer"
         onClick={() => console.log("Button Clicked again")}
       >
