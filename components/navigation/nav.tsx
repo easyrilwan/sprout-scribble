@@ -10,7 +10,7 @@ export default async function nav() {
   console.log(session);
 
   return (
-    <header className="bg-slate-500 py-4">
+    <header className="py-8">
       <nav>
         <ul className="flex items-center justify-between">
           <li>Logo</li>

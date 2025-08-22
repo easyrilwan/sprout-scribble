@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Roboto_Mono } from "next/font/google";
 
+import { cn } from "@/lib/utils";
 import Nav from "@/components/navigation/nav";
 
 import "./globals.css";
@@ -27,7 +28,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-locator-target="vscode">
-      <body className={`${inter.variable} ${robotoMono.variable} antialiased`}>
+      <body
+        className={cn(
+          "mx-auto max-w-7xl px-6 md:px-12",
+          `${inter.variable} ${robotoMono.variable} antialiased`,
+        )}
+      >
         <Nav />
 
         {children}
